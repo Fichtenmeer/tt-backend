@@ -1,0 +1,25 @@
+type Query {
+    news: [News!]!
+}
+
+type News {
+    id: String
+    typ: String
+    date: String
+    title: String
+    html: String
+    images: [ImgMeta]
+    dokuments: [Dokument]
+}
+
+type ImgMeta {
+    id: String
+    url: String
+    alt: String
+}
+
+type Dokument {
+    id: String
+    title: String
+    url: String
+}

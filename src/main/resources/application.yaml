@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: tt-kronwinkl-backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/kronwinkl
+    username: kronwinkl
+    password: kronwinkl
+  flyway:
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    out-of-order: true

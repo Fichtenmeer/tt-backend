@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  tt-postgres:
+    image: postgres
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    environment:
+      - 'POSTGRES_PASSWORD=kronwinkl'
+      - 'POSTGRES_USER=kronwinkl'
+      - 'POSTGRES_DB=kronwinkl'
