@@ -42,6 +42,10 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
+tasks.getByName<Jar>("jar") {
+	enabled = false
+}
+
 tasks.generateJava {
 	schemaPaths.add("${projectDir}/src/main/resources/graphql-client")
 	packageName = "de.kebonara.kronwinkl.codegen"
