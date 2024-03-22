@@ -1,0 +1,13 @@
+# Get all articles
+GRAPHQL https://tt-kronwinkl-backend.azurewebsites.net/api/graphql
+
+{
+    articles {
+        title
+        date
+        images {
+            name
+            url
+        }
+    }
+}

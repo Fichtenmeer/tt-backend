@@ -11,9 +11,9 @@ spring:
   application:
     name: tt-kronwinkl-backend
   datasource:
-    url: jdbc:postgresql://localhost:5432/kronwinkl
-    username: kronwinkl
-    password: kronwinkl
+    url: jdbc:postgresql://localhost:5432/${DB_NAME}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
   flyway:
     url: ${spring.datasource.url}
     user: ${spring.datasource.username}
