@@ -60,3 +60,5 @@ spring-boot-devtools
 *.kts~
 *.kts.cached
 *.kt.cached
+
+.env
