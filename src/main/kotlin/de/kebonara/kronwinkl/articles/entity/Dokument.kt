@@ -8,7 +8,7 @@ import java.util.*
 class Dokument(
     @Id
     var id: UUID,
-    var filename: String,
+    var name: String,
     var title: String,
     var articleId: UUID
 ) {

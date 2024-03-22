@@ -1,6 +1,12 @@
-POST http://localhost:8080/graphql
-Content-Type: application/json
+# Get all articles
+GRAPHQL http://localhost:8080/api/graphql
 
 {
-  "query": "query { articles { id title images { id } } }"
+    articles {
+        id
+        title
+        images {
+            id
+        }
+    }
 }

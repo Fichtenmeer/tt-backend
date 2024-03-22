@@ -17,12 +17,13 @@ fun Article.toDto(): ArticleDto = ArticleDto(
 
 fun ImgMeta.toDto(): ImgMetaDto = ImgMetaDto(
     id = id.toString(),
-    url = filename,
+    url = name,
+    name = name,
     alt = alt
 )
 
 fun Dokument.toDto(): DokumentDto = DokumentDto(
     id = id.toString(),
-    title = title,
-    url = filename
+    name = title,
+    url = name
 )

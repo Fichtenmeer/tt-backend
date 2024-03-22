@@ -8,7 +8,7 @@ import java.util.*
 class ImgMeta(
     @Id
     var id: UUID,
-    var filename: String,
+    var name: String,
     var alt: String,
     var articleId: UUID
 ) {

@@ -1,7 +1,6 @@
 package de.kebonara.kronwinkl.articles.dto
 
-data class DokumentDto(
-    var id: String,
+data class CreateImgMetaDto(
     var name: String,
-    var url: String
+    var alt: String
 )
