@@ -1,0 +1,1 @@
+GET https://tt-kronwinkl-backend.azurewebsites.net/api/actuator/health

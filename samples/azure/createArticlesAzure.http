@@ -1,0 +1,9 @@
+POST https://tt-kronwinkl-backend.azurewebsites.net/api/articles
+Content-Type: application/json
+
+{
+  "typ": "LEAGUE",
+  "date": "2024-03-02",
+  "title": "Teresa ist Toll",
+  "html": "<p>Dieser Teil ist der teil, welcher weiter unten steht</p>",
+}
