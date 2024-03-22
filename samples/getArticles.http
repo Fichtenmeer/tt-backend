@@ -7,6 +7,7 @@ GRAPHQL http://localhost:8080/api/graphql
         date
         images {
             name
+            url
         }
     }
 }

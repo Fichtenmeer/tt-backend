@@ -16,17 +16,17 @@ fun Article.toDto(): ArticleDto = ArticleDto(
     html = html
 )
 
-fun ImgMeta.toDto(): ImgMetaDto = ImgMetaDto(
+fun ImgMeta.toDto(baseUrl: String, folder: String): ImgMetaDto = ImgMetaDto(
     id = id.toString(),
-    url = name,
+    url = "$baseUrl/$folder/$name",
     name = name,
     alt = alt
 )
 
-fun Dokument.toDto(): DokumentDto = DokumentDto(
+fun Dokument.toDto(baseUrl: String, folder: String): DokumentDto = DokumentDto(
     id = id.toString(),
     name = title,
-    url = name
+    url = "$baseUrl/$folder/$name"
 )
 
 fun CreateArticleDto.toEntity(): Article = Article(
