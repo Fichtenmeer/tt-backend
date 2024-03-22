@@ -3,10 +3,10 @@ GRAPHQL http://localhost:8080/api/graphql
 
 {
     articles {
-        id
         title
+        date
         images {
-            id
+            name
         }
     }
 }

@@ -14,6 +14,7 @@ type Article {
 
 type ImgMeta {
     id: String
+    name: String
     url: String
     alt: String
 }
