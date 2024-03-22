@@ -29,9 +29,6 @@ dependencies {
 	implementation("org.flywaydb:flyway-core:10.10.0")
 	implementation("org.flywaydb:flyway-database-postgresql:10.10.0")
 	runtimeOnly("org.postgresql:postgresql")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	testImplementation("org.springframework:spring-webflux")
-	testImplementation("org.springframework.graphql:spring-graphql-test")
 }
 
 tasks.withType<KotlinCompile> {
