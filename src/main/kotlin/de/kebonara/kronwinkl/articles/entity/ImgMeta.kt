@@ -1,4 +1,4 @@
-package de.kebonara.kronwinkl.entity
+package de.kebonara.kronwinkl.articles.entity
 
 import jakarta.persistence.Entity
 import jakarta.persistence.Id
@@ -9,6 +9,7 @@ class ImgMeta(
     @Id
     var id: UUID,
     var filename: String,
-    var alt: String
+    var alt: String,
+    var articleId: UUID
 ) {
 }

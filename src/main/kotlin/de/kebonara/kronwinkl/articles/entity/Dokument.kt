@@ -1,4 +1,4 @@
-package de.kebonara.kronwinkl.entity
+package de.kebonara.kronwinkl.articles.entity
 
 import jakarta.persistence.Entity
 import jakarta.persistence.Id
@@ -10,6 +10,6 @@ class Dokument(
     var id: UUID,
     var filename: String,
     var title: String,
-    var newsId: UUID
+    var articleId: UUID
 ) {
 }

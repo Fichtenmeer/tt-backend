@@ -1,8 +1,8 @@
 type Query {
-    news: [News!]!
+    articles: [Article!]!
 }
 
-type News {
+type Article {
     id: String
     typ: String
     date: String
