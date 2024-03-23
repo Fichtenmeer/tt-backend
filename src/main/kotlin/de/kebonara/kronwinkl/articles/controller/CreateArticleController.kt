@@ -20,7 +20,11 @@ class CreateArticleController(
     @PostMapping
     fun createArticle(@RequestBody article: CreateArticleDto) {
         val created = articleRepository.save(article.toEntity())
-        dokumentRepository.saveAll(article.dokumente.map { it.toEntity(created.id) })
-        imgRepository.saveAll(article.imgMeta.map { it.toEntity(created.id) })
+        if (article.dokumente != null) {
+            dokumentRepository.saveAll(article.dokumente.map { it.toEntity(created.id) })
+        }
+        if (article.imgMeta != null) {
+            imgRepository.saveAll(article.imgMeta.map { it.toEntity(created.id) })
+        }
     }
 }

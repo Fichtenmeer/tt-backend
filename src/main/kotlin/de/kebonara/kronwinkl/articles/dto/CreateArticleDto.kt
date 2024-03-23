@@ -1,10 +1,10 @@
 package de.kebonara.kronwinkl.articles.dto
 
 data class CreateArticleDto(
-    var typ: String,
-    var date: String,
-    var title: String,
-    var html: String,
-    var dokumente: List<CreateDokumentDto>,
-    var imgMeta: List<CreateImgMetaDto>
+    val typ: String,
+    val date: String,
+    val title: String,
+    val html: String,
+    val dokumente: List<CreateDokumentDto>?,
+    val imgMeta: List<CreateImgMetaDto>?
 )

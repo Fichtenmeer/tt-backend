@@ -5,17 +5,5 @@ Content-Type: application/json
   "typ": "LEAGUE",
   "date": "2024-03-02",
   "title": "Teresa ist Toll",
-  "html": "<p>Dieser Teil ist der teil, welcher weiter unten steht</p>",
-  "dokumente": [
-    {
-      "title": "Dokument 1",
-      "name": "dokument1.pdf"
-    }
-  ],
-  "imgMeta": [
-    {
-      "name": "img1.jpg",
-      "alt": "Bild 1"
-    }
-  ]
+  "html": "<p>Dieser Teil ist der teil, welcher weiter unten steht</p>"
 }
