@@ -4,12 +4,12 @@ import jakarta.persistence.Entity
 import jakarta.persistence.Id
 import java.util.*
 
-@Entity
-class Dokument(
+@Entity(name = "img_meta")
+class ImgMetaEntity(
     @Id
     var id: UUID,
     var name: String,
-    var title: String,
+    var alt: String,
     var articleId: UUID
 ) {
 }

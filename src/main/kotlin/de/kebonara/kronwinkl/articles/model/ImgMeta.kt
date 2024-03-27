@@ -1,6 +1,6 @@
-package de.kebonara.kronwinkl.articles.dto
+package de.kebonara.kronwinkl.articles.model
 
-data class ImgMetaDto(
+data class ImgMeta(
     var id: String,
     var name: String,
     var url: String,
