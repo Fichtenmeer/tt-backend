@@ -1,0 +1,5 @@
+### Create articles until 2024-04-01
+POST http://localhost:8080/api/articles/bulk
+Content-Type: application/json
+
+< articles_04_01.json
