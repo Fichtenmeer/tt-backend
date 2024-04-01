@@ -26,4 +26,11 @@ class CreateArticleController(
             imgMetaService.createImgMeta(article.imgMeta, created.id)
         }
     }
+
+    @PostMapping("/bulk")
+    fun createArticle(@RequestBody articles: List<CreateArticleDto>) {
+        articles.forEach { article ->
+            createArticle(article)
+        }
+    }
 }

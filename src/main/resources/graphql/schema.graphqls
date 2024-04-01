@@ -8,8 +8,8 @@ type Article {
     date: String!
     title: String!
     html: String!
-    images: [ImgMeta!]!
-    dokuments: [Dokument!]!
+    images: [ImgMeta!]
+    dokuments: [Dokument!]
 }
 
 type ImgMeta {
