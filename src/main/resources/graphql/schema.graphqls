@@ -3,24 +3,23 @@ type Query {
 }
 
 type Article {
-    id: String
-    typ: String
-    date: String
-    title: String
-    html: String
-    images: [ImgMeta]
-    dokuments: [Dokument]
+    id: String!
+    typ: String!
+    date: String!
+    title: String!
+    html: String!
+    images: [ImgMeta!]!
+    dokuments: [Dokument!]!
 }
 
 type ImgMeta {
-    id: String
-    name: String
-    url: String
-    alt: String
+    id: String!
+    url: String!
+    alt: String!
 }
 
 type Dokument {
-    id: String
-    name: String
-    url: String
+    id: String!
+    title: String!
+    url: String!
 }
