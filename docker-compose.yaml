@@ -1,12 +1,13 @@
 version: '3.9'
 
 services:
-  tt-postgres:
-    image: postgres
+  tt-db:
+    image: mariadb
     restart: unless-stopped
     ports:
-      - 5432:5432
+      - 3306:3306
     environment:
-      - 'POSTGRES_PASSWORD=kronwinkl'
-      - 'POSTGRES_USER=kronwinkl'
-      - 'POSTGRES_DB=kronwinkl'
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: kronwinkl
+      MYSQL_USER: kronwinkl
+      MYSQL_PASSWORD: kronwinkl

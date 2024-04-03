@@ -6,7 +6,7 @@ GRAPHQL https://tt-kronwinkl-backend.azurewebsites.net/api/graphql
         title
         date
         images {
-            name
+            alt
             url
         }
     }
