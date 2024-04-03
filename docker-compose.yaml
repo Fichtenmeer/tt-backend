@@ -11,3 +11,12 @@ services:
       MYSQL_DATABASE: kronwinkl
       MYSQL_USER: kronwinkl
       MYSQL_PASSWORD: kronwinkl
+  myapp:
+    image: myapp:latest
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    environment:
+      - 'DB_USER=kronwinkl'
+      - 'DB_PASSWORD=kronwinkl'
+      - 'DB_URL=jdbc:mariadb://host.docker.internal:3306/kronwinkl'
